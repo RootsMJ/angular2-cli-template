@@ -1,0 +1,23 @@
+<div class="sidenav-container" fxLayout="column">
+
+    <md-toolbar color="primary" class="sidenav-toolbar mat-elevation-z2">
+        <div fxLayout="row" style="width: 100%;">
+            <img src="assets/img/logo/sf-menu-logo.png" fxFlexAlign="center" class="menu-logo fade-in-on-icon-sidenav">
+            <span fxFlex><!-- fill space --></span>
+            <div fxHide="true" fxHide.gt-sm="false" fxFlexAlign="center">
+                <button md-icon-button (click)="toggleIconSidenav()">
+          <md-icon class="icon-sidenav-toggle fade-in-on-icon-sidenav" [class.rotate]="isIconSidenav()">chevron_left</md-icon>
+        </button>
+            </div>
+        </div>
+    </md-toolbar>
+
+    <div class="sidenav-scrollbar-container" fxLayout="column">
+        <perfect-scrollbar>
+            <md-nav-list fxLayout="column" class="sidenav-list sidenav-toplevel">
+                <sf-sidenav-item *ngFor="let item of items" [item]="item"></sf-sidenav-item>
+            </md-nav-list>
+        </perfect-scrollbar>
+    </div>
+
+</div>

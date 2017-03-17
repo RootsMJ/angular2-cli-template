@@ -1,0 +1,412 @@
+    /* You can add global styles to this file, and also import other style files */
+    /*---------------------------------------------------------------------------*/
+    /* THEMEING */
+
+    @import '~@angular/material/core/theming/prebuilt/deeppurple-amber';
+    // @import '~@angular/material/core/theming/prebuilt/deeppurple-amber';
+    @import 'src/assets/scss/material-theme/sf-theme.scss';
+    /* GOOGLE FONTS */
+
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    $roboto: 'Roboto';
+    /* CUSTOM IMPORTS */
+
+    @import 'src/styles/_tables.scss';
+    /* COLOR VARIBLES */
+
+    $yellow: #fbc311;
+    $dark-gray: #3c3c3b;
+    $white: #fff;
+    $black: #000;
+    /* FONT VARIABLES */
+
+    $primary-font: $roboto;
+    html {
+        // Remove the vertical scrollbar
+        min-height: 100vh;
+        height: 100vh;
+    }
+
+    body {
+        background-color: $white;
+        font-family: $roboto;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    /* IMG */
+
+    .img-responsive {
+        width: 100%;
+        height: auto;
+    }
+    /* TYPOGRAPHY */
+
+    .text-white {
+        color: $white;
+    }
+
+    .text-yellow {
+        color: $yellow;
+    }
+
+    .text-red {
+        color: #ea1818;
+    }
+
+    .text-blue {
+        color: #3f51b5;
+    }
+
+    .text-green {
+        color: #4CBC4C;
+    }
+
+    .text-purple {
+        color: mediumpurple;
+    }
+
+    .icon-fs-50 {
+        font-size: 50px;
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .icon-fs-40 {
+        font-size: 40px;
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .icon-fs-36 {
+        font-size: 36px !important;
+        width: 36px !important;
+        height: 36px !important;
+    }
+
+    .icon-fs-34 {
+      font-size: 34px !important;
+      height: 34px !important;
+      width: 34px !important;
+      vertical-align: middle !important;
+    }
+
+    .icon-fs-16 {
+        font-size: 14px;
+        height: 14px !important;
+        width: 14px !important;
+    }
+    /* FLEX */
+
+    .flex {
+        flex: 1 1 auto;
+    }
+
+    // BEGINNING OF PASTE CODE! ////////////////////////////////////////////
+    html,
+    body {
+        min-height: 100%;
+        height: 100%;
+        line-height: normal;
+        font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    div {
+        box-sizing: border-box;
+    }
+
+    md-sidenav-container {
+        height: 100%;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.005em;
+    }
+
+    pre {
+        margin: 0;
+    }
+
+    code {
+        white-space: pre;
+    }
+
+    // DEMO STYLES
+    .demo-preview {
+        background: #F2F2F2;
+        button {
+            //margin: 12px;
+        }
+        md-card {
+            margin: 24px 0;
+        }
+        md-card+md-card {
+            margin: 0 0 24px;
+        }
+        md-card>md-card-content>* {
+            margin: 10px 5px;
+        }
+    }
+
+    h3,
+    h4,
+    h5,
+    p {
+        margin: 0 0 16px;
+    }
+
+    h4 {
+        font-weight: 500;
+        color: #777777;
+        font-size: 18px;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        .demo-tabs {
+            overflow-x: hidden;
+        }
+    }
+
+    .inline {
+        display: inline-block;
+        padding: 0 0.5em;
+        white-space: normal;
+        vertical-align: text-bottom;
+    }
+
+    [md-prefix]>md-icon,
+    [md-suffix]>md-icon {
+        font-size: 18px;
+        vertical-align: middle;
+        height: 16px;
+        width: 22px;
+    }
+
+    .demo-list {
+        margin: 24px 0;
+        background: #FFF;
+        width: 350px;
+    }
+
+    .subline {
+        color: #999999;
+    }
+
+    .avatar-flex {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+    .widget {
+        margin: 12px;
+    }
+
+    .border-radius {
+        border-radius: 50%;
+    }
+
+    .avatar {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .middle {
+        vertical-align: middle;
+    }
+
+    .quickpanel .mat-tab-body-content,
+    .quickpanel .mat-tab-body-wrapper,
+    .quickpanel md-tab-body,
+    .quickpanel md-tab-group {
+        height: 100%;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .pointer {
+        cursor: pointer;
+    }
+    /* DASHBOARD STYLES */
+
+    .top-container {
+        height: 200px !important;
+        background-color: $yellow;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 64;
+    }
+
+    .sf-container {
+        margin-top: 5%;
+    }
+    /* MARGINS */
+
+    .m-none {
+        margin: 0;
+    }
+    /* MARGINS-TOP */
+
+    .mt-sm {
+        margin-top: 10px;
+    }
+
+    .mt-md {
+        margin-top: 15px;
+    }
+    /* MARGINS-BOTTOM */
+
+    .mb-none {
+        margin-bottom: 0;
+    }
+
+    .mb-xs {
+        margin-bottom: 5px;
+    }
+
+    .mb-sm {
+        margin-bottom: 10px;
+    }
+    /* MARGINS IMPORTANT */
+
+    .m-md-imp {
+        margin: 15px !important;
+    }
+    /* MARGINS-TOP IMPORTANT */
+
+    .mt-xs-imp {
+        margin-top: 5px !important;
+    }
+    /* MARGINS-BOTTOM IMPORTANT */
+
+    .mb-md-imp {
+        margin-bottom: 15px !important;
+    }
+
+    .mb-lg-imp {
+        margin-bottom: 20px !important;
+    }
+    /* PADDINGS */
+
+    .p-none {
+        padding: 0;
+    }
+
+    .p-md {
+        padding: 15px;
+    }
+
+    .p-lg {
+        padding: 20px;
+    }
+
+    .mt0 {
+        margin-top: 0 !important;
+    }
+
+    /* PADDING LEFT */
+    .pl-none {
+      padding-left: 0 !important;
+    }
+
+    /* PADDING RIGHT */
+    .pr-none {
+      padding-right: 0 !important;
+    }
+
+    /* DASHBOARD STYLES */
+
+    .top-container {
+        height: 150px;
+        background-color: $yellow;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 64;
+    }
+
+    .sf-container {
+        margin-top: 5%;
+    }
+    /* MARGINS */
+
+    .m-none {
+        margin: 0;
+    }
+    /* MARGINS-TOP */
+
+    .mt-sm {
+        margin-top: 10px;
+    }
+
+    .mt-md {
+        margin-top: 15px;
+    }
+    /* MARGINS-BOTTOM */
+
+    .mb-xs {
+        margin-bottom: 5px;
+    }
+
+    .mb-sm {
+        margin-bottom: 10px;
+    }
+    /* MARGINS IMPORTANT */
+
+    .m-md-imp {
+        margin: 15px !important;
+    }
+    /* MARGINS-TOP IMPORTANT */
+
+    .mt-xs-imp {
+        margin-top: 5px !important;
+    }
+    /* MARGINS-BOTTOM IMPORTANT */
+
+    .mb-md-imp {
+        margin-bottom: 15px !important;
+    }
+
+    .mb-lg-imp {
+        margin-bottom: 20px !important;
+    }
+    /* PADDINGS */
+
+    .p-none {
+        padding: 0;
+    }
+
+    .p-md {
+        padding: 15px;
+    }
+
+    .p-lg {
+        padding: 20px;
+    }
+
+    .mt0 {
+        margin-top: 0 !important;
+    }

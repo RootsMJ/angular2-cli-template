@@ -1,0 +1,72 @@
+<md-sidenav-container>
+
+    <md-sidenav class="quickpanel" [opened]="quickpanelOpen" align="end" mode="over" #quickpanel>
+
+        <sf-quickpanel></sf-quickpanel>
+
+    </md-sidenav>
+
+    <md-sidenav class="sidenav" [opened]="sidenavOpen" align="start" [mode]="sidenavMode" sfIconSidenav #sidenav>
+
+        <sf-sidenav></sf-sidenav>
+
+    </md-sidenav>
+
+    <md-toolbar class="main-toolbar mat-elevation-z2">
+        <div fxHide="false" fxHide.gt-sm>
+            <button (click)="sidenav.open()" md-icon-button>
+        <md-icon>menu</md-icon>
+      </button>
+        </div>
+
+        <sf-breadcrumbs fxHide="true" fxHide.gt-sm="false"></sf-breadcrumbs>
+
+        <span fxFlex></span>
+
+    <!--<button fxHide="true" fxHide.gt-sm="false" md-button class="fullscreen-toggle" (click)="toggleFullscreen()">
+      <md-icon *ngIf="!isFullscreen">fullscreen</md-icon>
+      <md-icon *ngIf="isFullscreen">fullscreen_exit</md-icon>
+    </button>-->
+
+        <sf-search></sf-search>
+
+        <button class="user-button" md-button [mdMenuTriggerFor]="menu">
+      <div fxLayout="row" fxLayoutAlign="start center">
+        <img src="assets/img/avatars/noavatar.png" class="avatar-flex"/>
+        <span fxHide="true" fxHide.gt-sm="false" style="font-weight: 500; margin-left: 5px;">Ulrika Eriksson</span>
+        <md-icon fxHide="true" fxHide.gt-sm="false">keyboard_arrow_down</md-icon>
+      </div>
+    </button>
+
+
+        <button md-button class="quickpanel-toggle" (click)="quickpanel.open()">
+      <md-icon>format_align_right</md-icon>
+    </button>
+
+
+        <md-menu class="user-menu" x-position="before" y-position="below" #menu="mdMenu">
+            <button md-menu-item>
+        <md-icon>account_circle</md-icon>
+        <span>Min profil</span>
+      </button>
+            <button md-menu-item>
+        <md-icon>settings</md-icon>
+        <span>Inställningar</span>
+      </button>
+            <button md-menu-item>
+        <md-icon>help</md-icon>
+        <span>Hjälp</span>
+      </button>
+            <md-divider></md-divider>
+            <button [routerLink]="['/login']" md-menu-item>
+        <md-icon>exit_to_app</md-icon>
+        <span>Logga ut</span>
+      </button>
+        </md-menu>
+    </md-toolbar>
+
+    <div class="main-container" #scrollContainer>
+        <router-outlet (activate)="onActivate($event, scrollContainer)"></router-outlet>
+    </div>
+
+</md-sidenav-container>
