@@ -15,8 +15,6 @@ export class LoginComponent implements OnInit {
 
   email: String;
   password: String;
-  @Input()
-  singInError: string;
 
   constructor(
     private router: Router

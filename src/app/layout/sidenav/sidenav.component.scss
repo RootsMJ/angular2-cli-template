@@ -1,41 +1,25 @@
 @import "../../../styles/_sidenav";
+
 md-toolbar.mat-toolbar.sidenav-toolbar {
-    //background: $background-color__sidenav-toolbar;
-    background: #4d4d4c;
-    padding: 0 14px 0 24px;
-    z-index: 3;
-    height: 172px;
+  background: $background-color__sidenav-toolbar;
+  padding: 0 14px 0 24px;
+  z-index: 3;
 }
 
-.sidenav-container,
-.sidenav-scrollbar-container {
-    height: 100%;
-    background: #3c3c3b;
+.sidenav-container, .sidenav-scrollbar-container {
+  height: 100%;
 }
 
-.sidenav-toplevel > .sidenav-item > .sidenav-anchor.active {
-    background: #fbc311 !important;
-}
-
-.sidenav-toplevel > .sidenav-item > .sidenav-list-nested > .sidenav-item > .sidenav-anchor.active {
-  background: #fbc311 !important;
-}
-
-.cdk-focus-trap-content,
-md-sidenav {
-    overflow-y: hidden !important;
-    overflow-x: hidden;
+.cdk-focus-trap-content, md-sidenav {
+  overflow-y: hidden !important;
+  overflow-x: hidden;
 }
 
 .icon-sidenav-toggle {
-    color: $color__sidenav-list;
-    transition: transform .25s;
-    &.rotate {
-        transform: rotate(-180deg);
-    }
-}
+  color: $color__sidenav-list;
+  transition: transform .25s;
 
-/* MENU LOGO */
-.menu-logo {
-    margin-top: 35%;
+  &.rotate {
+    transform: rotate(-180deg);
+  }
 }

@@ -45,13 +45,6 @@ export class SidenavComponent implements OnInit, OnDestroy {
 
     this.breadcrumbService.addFriendlyNameForRoute('/', 'Startsida');
 
-    this.breadcrumbService.addFriendlyNameForRoute('/tickets', 'Ärenden');
-    this.breadcrumbService.addFriendlyNameForRoute('/tickets/department', 'Avdelning');
-    this.breadcrumbService.addFriendlyNameForRoute('/tickets/category', 'Kategori');
-
-    this.breadcrumbService.addFriendlyNameForRoute('/users', 'Användare');
-    this.breadcrumbService.addFriendlyNameForRoute('/stores', 'Bobutik');
-
     // this.breadcrumbService.addFriendlyNameForRoute('/apps', 'Apps');
     // this.breadcrumbService.addFriendlyNameForRoute('/apps/inbox', 'Inbox');
     // this.breadcrumbService.addFriendlyNameForRoute('/apps/calendar', 'Calendar');

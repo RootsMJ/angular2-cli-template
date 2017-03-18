@@ -26,77 +26,10 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-##Start
-Angular2 med Typescript 2 Template för uppstart av projekt. Se [README](https://github.com/KM-Development/angular2-setup/wiki "Angular2 Template Wiki") för mer information.
 
-***
-
-## Innehållsförteckning
-* [Projektöversikt](#project-overview)
-* [Snabbstart](#getting-started)
-    * [Förutsättningar](#dependencies)
-    * [Installation](#installing)
-    * [Kör applikationen](#running-the-app)
-* [Filstruktur](#file-structure)
-* [Konfiguration](#configuration)
-* [AoT, Vad man ska undvika](#aot-donts)
-* [Externa Stylesheets](#external-stylesheets)
-* [TypeScript](#typescript)
-* [@Types](#types)
-* [FAQ](#frequently-asked-questions)
-* [License](#license)
-
-***
-
-## Projektöversikt
-
-* Använder [Webpack 2](http://webpack.github.io/) som system för att hantera flöden för byggprocesser, felhantering, minifiering, bundling och mycket mer.
-* Rekommenderade metoder i fil- och applikationsstruktur för Angular 2.
-* Fungerande byggsystem med Webpack för att arbeta med TypeScript.
-* Angular 2 exempelfiler som fungerar som mallar för uppkommande projekt.
-* Ahead of Time (AoT) compile for rapid page loads of your production builds.
-* "Tree-shaking" automatiskt rensa applikationens beroenden från onödig kod.
-* [Webpack DLL-filer](https://robertknight.github.io/posts/webpack-dll-plugins/) ökar
- dramatiskt systemets byggtider, tester etc. och i längden teamets produktivitet.
-* Unit-Tester för Angular 2 med Jasmine och Karma.
-* Kodtäckning med Istanbul och Karma.
-* Integration- och systemtester för Angular 2 med Protractor.
-* Typhantering för TypeScript with @types.
-* Hot Module Replacement (HMR) med Webpack2, [@angularclass/hmr](https://github.com/angularclass/angular2-hmr) och [@angularclass/hmr-loader](https://github.com/angularclass/angular2-hmr-loader)
-* Material Design med [angular/material2](https://github.com/angular/material2)
-* Angular 4 support via ändringar på package.json-filer.
-
-
-***
-
-## Snabbstart
-**Kolla först att du har Node version >= 5.0 och NPM >= 3 installerade**
-
-```bash/powershell/cmd  
-# klona repot
-# --depth 1:  Tar bort all git historik förutom senaste. Bra för att skapa nytt projekt. 
-git clone --depth 1 https://github.com/angularclass/angular2-webpack-starter.git
-
-# Navigera valfri konsol till den nya projektmappen:
-cd angular2-webpack-starter
-
-# Installera alla beroenden och bibliotek som behövs från npm.
-npm install
-
-# starta development-servern
-npm start
-
-# Använd "Hot Module Replacement":
-npm run server:dev:hmr
-```
-
-Gå till [http://localhost:5002](http://localhost:5002) eller den adress och port du valt
-
-***
 
 ## Filstruktur
-We use the component approach in our starter. This is the new standard for developing Angular apps and a great way to ensure maintainable code by encapsulation of our behavior logic. A component is basically a self contained app usually in a single file or a folder with each concern as a file: style, template, specs, e2e, and component class. Here's how it looks:
+Using the component approach in our starter. This is the new standard for developing Angular apps and a great way to ensure maintainable code by encapsulation of our behavior logic. A component is basically a self contained app usually in a single file or a folder with each concern as a file: style, template, specs, e2e, and component class. Here's how it looks:
 ```
 angular2-setup/
  ├──config/                        * Vår configuration

@@ -21,15 +21,6 @@ export class SidenavService {
     const menu = this;
 
     const start = menu.addItem('Startsida', 'home', '/', 1);
-
-    const tickets = menu.addItem('Ärenden', 'receipt', null, 2);
-    menu.addSubItem(tickets, 'Ärendelista', '/tickets/', 1);
-    menu.addSubItem(tickets, 'Avdelning', '/tickets/department', 2);
-    menu.addSubItem(tickets, 'Kategori', '/tickets/category', 3);
-
-    const users = menu.addItem('Användare', 'group', '/users', 3);
-
-    const stores = menu.addItem('Bobutik', 'store', '/stores', 4);
     // menu.addItem('Inbox', 'mail', '/apps/inbox', 1, '22', '#7986CC');
     // menu.addItem('Chat', 'chat', '/apps/chat', 2, '14', '#E15C74');
     // menu.addItem('Calendar', 'date_range', '/apps/calendar', 3);
