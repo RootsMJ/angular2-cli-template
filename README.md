@@ -44,7 +44,7 @@ angular2-setup/
  ├──src/                           * Vår källkod som transpilas till Javascript
  |   ├──main.browser.ts            * Vår startfil för Browsermiljön
  │   │
- |   ├──index.html                 * Index.html: Vår index-fil som är absolut första fil ||   |                               som man når vid start av applikationen.
+ |   ├──index.html                 * Index.html: Vår index-fil som är absolut första fil man når vid start av applikationen.
  │   │
  |   ├──polyfills.ts               * Vår Polyfills (ger äldre browsers korrekta
  |   |                               fallback-funktioner eller extendar deras 
@@ -71,6 +71,3 @@ angular2-setup/
  └──webpack.config.js              * webpack main configuration file
 
 ```
-
-
-### Under uppbyggnad...
